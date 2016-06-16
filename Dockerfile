@@ -2,7 +2,7 @@ FROM alpine:3.3
 
 MAINTAINER shufo
 
-ENV PHANTOMJS_VERSION 2.1.1
+ENV PHANTOMJS_VERSION 2.0.0
 
 RUN apk add --update --no-cache curl && \
     curl -Ls "https://github.com/dustinblackman/phantomized/releases/download/${PHANTOMJS_VERSION}/dockerized-phantomjs.tar.gz" | tar xz -C / && \ 
